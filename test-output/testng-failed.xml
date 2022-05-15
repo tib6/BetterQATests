@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="BetterQATests.BetterQATests.AppTest">
+        <methods>
+          <include name="search_For_Nothing"/>
+          <include name="search_For_Star_Trek" invocation-numbers="0"/>
+          <include name="any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount"/>
+          <include name="quit"/>
+          <include name="setup"/>
+          <include name="refresh"/>
+        </methods>
+      </class> <!-- BetterQATests.BetterQATests.AppTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="7" passed="2" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-15T10:54:30Z" name="Default suite" finished-at="2022-05-15T10:55:38Z" duration-ms="68065">
+    <groups>
+    </groups>
+    <test started-at="2022-05-15T10:54:30Z" name="Default test" finished-at="2022-05-15T10:55:38Z" duration-ms="68065">
+      <class name="BetterQATests.BetterQATests.AppTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:54:30Z" name="setup" finished-at="2022-05-15T13:54:41Z" duration-ms="11506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="list_Of_Movie_Titles_Is_Displayed_And_Match()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:54:41Z" name="list_Of_Movie_Titles_Is_Displayed_And_Match" finished-at="2022-05-15T13:54:41Z" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- list_Of_Movie_Titles_Is_Displayed_And_Match -->
+        <test-method is-config="true" signature="refresh()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:54:41Z" name="refresh" finished-at="2022-05-15T13:54:47Z" duration-ms="5508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refresh -->
+        <test-method signature="search_For_Nothing()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:54:47Z" name="search_For_Nothing" finished-at="2022-05-15T13:54:54Z" duration-ms="7711" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Learn More button could not be found!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Learn More button could not be found!
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at BetterQATests.BetterQATests.AppTest.search_For_Nothing(AppTest.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_For_Nothing -->
+        <test-method is-config="true" signature="refresh()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:54:54Z" name="refresh" finished-at="2022-05-15T13:54:59Z" duration-ms="4838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refresh -->
+        <test-method signature="search_For_Star_Trek(java.lang.String, java.lang.String)[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:54:59Z" name="search_For_Star_Trek" data-provider="DataForSearch" finished-at="2022-05-15T13:55:00Z" duration-ms="292" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Star Trek: First Contact]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[The Shawshank Redemption]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element reference of <h2 class="jss39 jss44"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-RH9AKPJ', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [619d2bea-8d99-4771-888c-9bf7e37ba56a, getElementText {id=1c04c212-55d4-45ff-b355-b5a21c3d8670}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220512193916, moz:debuggerAddress: localhost:53046, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 11600, moz:profile: C:\Users\tibit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:53046/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[[[FirefoxDriver: firefox on WINDOWS (619d2bea-8d99-4771-888c-9bf7e37ba56a)] -> class: movies]] -> tag name: h2]
+Session ID: 619d2bea-8d99-4771-888c-9bf7e37ba56a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element reference of <h2 class="jss39 jss44"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-RH9AKPJ', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [619d2bea-8d99-4771-888c-9bf7e37ba56a, getElementText {id=1c04c212-55d4-45ff-b355-b5a21c3d8670}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220512193916, moz:debuggerAddress: localhost:53046, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 11600, moz:profile: C:\Users\tibit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:53046/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[[[FirefoxDriver: firefox on WINDOWS (619d2bea-8d99-4771-888c-9bf7e37ba56a)] -> class: movies]] -> tag name: h2]
+Session ID: 619d2bea-8d99-4771-888c-9bf7e37ba56a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
+	at pages.TopMovies.printOut(TopMovies.java:162)
+	at BetterQATests.BetterQATests.AppTest.search_For_Star_Trek(AppTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_For_Star_Trek -->
+        <test-method is-config="true" signature="refresh()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:55:00Z" name="refresh" finished-at="2022-05-15T13:55:06Z" duration-ms="6032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refresh -->
+        <test-method signature="any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:55:06Z" name="any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount" finished-at="2022-05-15T13:55:09Z" duration-ms="3478" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Some data from the movie attributes do not match!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Some data from the movie attributes do not match!
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at BetterQATests.BetterQATests.AppTest.any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount(AppTest.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount -->
+        <test-method is-config="true" signature="refresh()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:55:09Z" name="refresh" finished-at="2022-05-15T13:55:15Z" duration-ms="5737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refresh -->
+        <test-method signature="any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:55:15Z" name="any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount" finished-at="2022-05-15T13:55:18Z" duration-ms="3503" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Some data from the movie attributes do not match!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Some data from the movie attributes do not match!
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at BetterQATests.BetterQATests.AppTest.any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount(AppTest.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount -->
+        <test-method is-config="true" signature="refresh()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:55:18Z" name="refresh" finished-at="2022-05-15T13:55:23Z" duration-ms="4212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refresh -->
+        <test-method signature="any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:55:23Z" name="any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount" finished-at="2022-05-15T13:55:26Z" duration-ms="3506" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Some data from the movie attributes do not match!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Some data from the movie attributes do not match!
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at BetterQATests.BetterQATests.AppTest.any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount(AppTest.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount -->
+        <test-method is-config="true" signature="refresh()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:55:26Z" name="refresh" finished-at="2022-05-15T13:55:31Z" duration-ms="4823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refresh -->
+        <test-method signature="the_Shawshank_Redemption_Release_Date()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:55:31Z" name="the_Shawshank_Redemption_Release_Date" finished-at="2022-05-15T13:55:32Z" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- the_Shawshank_Redemption_Release_Date -->
+        <test-method is-config="true" signature="refresh()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:55:32Z" name="refresh" finished-at="2022-05-15T13:55:37Z" duration-ms="4824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refresh -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:BetterQATests.BetterQATests.AppTest@ae3540e]" started-at="2022-05-15T13:55:37Z" name="quit" finished-at="2022-05-15T13:55:38Z" duration-ms="1121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- BetterQATests.BetterQATests.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

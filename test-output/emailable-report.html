@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">68,1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="5">BetterQATests.BetterQATests.AppTest</td><td><a href="#m1"><b>search_For_Nothing</b>  </a></td><td class="numi">1</td><td>1652612087244</td><td class="numi">7711</td></tr><tr class="failedodd"><td><a href="#m2"><b>search_For_Star_Trek</b>  </a></td><td class="numi">1</td><td>1652612099799</td><td class="numi">292</td></tr><tr class="failedodd"><td><a href="#m3"><b>any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount</b>  </a></td><td class="numi">3</td><td>1652612106130</td><td class="numi">20439</td></tr><tr class="failedodd"><td><a href="#m4"><b>any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount</b>  </a></td><td class="numi">3</td><td>1652612106130</td><td class="numi">20439</td></tr><tr class="failedodd"><td><a href="#m5"><b>any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount</b>  </a></td><td class="numi">3</td><td>1652612106130</td><td class="numi">20439</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">BetterQATests.BetterQATests.AppTest</td><td><a href="#m6"><b>list_Of_Movie_Titles_Is_Displayed_And_Match</b>  </a></td><td class="numi">1</td><td>1652612081622</td><td class="numi">113</td></tr><tr class="passedodd"><td><a href="#m7"><b>the_Shawshank_Redemption_Release_Date</b>  </a></td><td class="numi">1</td><td>1652612131395</td><td class="numi">828</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">BetterQATests.BetterQATests.AppTest:any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount</h2>
+<div style="padding-left:3em">
+<p>Some data from the movie attributes do not match!</p>
+org.junit.Assert.fail(Assert.java:93)
+<br/>at org.junit.Assert.assertTrue(Assert.java:43)
+<br/>at BetterQATests.BetterQATests.AppTest.any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount(AppTest.java:90)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">BetterQATests.BetterQATests.AppTest:any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount</h2>
+<div style="padding-left:3em">
+<p>Some data from the movie attributes do not match!</p>
+org.junit.Assert.fail(Assert.java:93)
+<br/>at org.junit.Assert.assertTrue(Assert.java:43)
+<br/>at BetterQATests.BetterQATests.AppTest.any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount(AppTest.java:90)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">BetterQATests.BetterQATests.AppTest:search_For_Star_Trek</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Star Trek: First Contact</td>
+<td>The Shawshank Redemption</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>The element reference of &lt;h2 class=&quot;jss39 jss44&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-RH9AKPJ&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [619d2bea-8d99-4771-888c-9bf7e37ba56a, getElementText {id=1c04c212-55d4-45ff-b355-b5a21c3d8670}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220512193916, moz:debuggerAddress: localhost:53046, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 11600, moz:profile: C:\Users\tibit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:53046/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[[[FirefoxDriver: firefox on WINDOWS (619d2bea-8d99-4771-888c-9bf7e37ba56a)] -&gt; class: movies]] -&gt; tag name: h2]
+Session ID: 619d2bea-8d99-4771-888c-9bf7e37ba56a</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
+<br/>at pages.TopMovies.printOut(TopMovies.java:162)
+<br/>at BetterQATests.BetterQATests.AppTest.search_For_Star_Trek(AppTest.java:65)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">BetterQATests.BetterQATests.AppTest:any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount</h2>
+<div style="padding-left:3em">
+<p>Some data from the movie attributes do not match!</p>
+org.junit.Assert.fail(Assert.java:93)
+<br/>at org.junit.Assert.assertTrue(Assert.java:43)
+<br/>at BetterQATests.BetterQATests.AppTest.any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount(AppTest.java:90)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">BetterQATests.BetterQATests.AppTest:search_For_Nothing</h2>
+<div style="padding-left:3em">
+<p>Learn More button could not be found!</p>
+org.junit.Assert.fail(Assert.java:93)
+<br/>at org.junit.Assert.assertTrue(Assert.java:43)
+<br/>at BetterQATests.BetterQATests.AppTest.search_For_Nothing(AppTest.java:108)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">BetterQATests.BetterQATests.AppTest:the_Shawshank_Redemption_Release_Date</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">BetterQATests.BetterQATests.AppTest:list_Of_Movie_Titles_Is_Displayed_And_Match</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
