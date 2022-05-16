@@ -77,6 +77,7 @@ public class AppTest
 	 * This test appears to have a bug, sometimes it opens a wrong "Learn More" button
 	 * First time it fails and then work correctly(usually)
 	 * If the test run itself multiple times in appears to work correctly (invocationCount = numberOfCount)
+	 * Everyday have a new popularity and vote count, to work this out need to check data every time before test and modify if needed
 	 * */
     @Test(priority = 2, invocationCount = 3)
     public void any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount() {
@@ -96,7 +97,7 @@ public class AppTest
      * This is the bug function
      * When trying to search with the empty input box the DOM erase 
      * */
-    @Test(priority = 0)
+    @Test(priority = 3)
     public void search_For_Nothing() throws InterruptedException{
     	objTopMovies = new TopMovies(driver);
     	objTopMovies.search("");
