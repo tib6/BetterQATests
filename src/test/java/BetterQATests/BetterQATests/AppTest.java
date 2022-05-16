@@ -84,11 +84,11 @@ public class AppTest
     	objTopMovies.search("Spirited Away");
     	objTopMovies.clickLearnMore(2);
     	objTopMovies.printAttributesData();
-    	if(!objTopMovies.verify_Movie_Learn_More_Atributtes("2001-07-20", "78.707", "8.5", "12798")) {
+    	if(!objTopMovies.verify_Movie_Learn_More_Atributtes("2001-07-20", "84.257", "8.5", "12806")) {
     		objTopMovies.screenShot("any_Movie_ReleasedOn_Popularity__VoteAverage__VoteCount");
     	}
         assertTrue("Some data from the movie attributes do not match!",
-        		objTopMovies.verify_Movie_Learn_More_Atributtes("2001-07-20", "78.707", "8.5", "12798"));
+        		objTopMovies.verify_Movie_Learn_More_Atributtes("2001-07-20", "84.257", "8.5", "12806"));
     	
     }
   
